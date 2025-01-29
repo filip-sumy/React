@@ -1,18 +1,13 @@
-import Button from "./components/Button"
-
+import Counter from "./components/Counter";
+import Greeting from "./components/Greeting";
 function App() {
 
-  const handleButtonClick = () => {
-    console.log("Click");
-  };
-
   return (
-    <div>
-      <Button label="Click"></Button>
-      <Button label="Press it" ></Button>
-      <Button onButtonClick = {handleButtonClick} />
-    </div>
-  );
+    <>
+      <Counter></Counter>
+      <Greeting name={"world"}></Greeting>
+    </>
+  )
 }
 
 export default App;
