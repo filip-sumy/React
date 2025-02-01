@@ -1,11 +1,17 @@
-import Counter from "./components/Counter";
-import Greeting from "./components/Greeting";
+import Controlled from "./components/Controlled";
+import FetchDataComponent from "./components/FetchDataComponent";
+import Uncontrolled from "./components/Uncontrolled";
 function App() {
 
   return (
+    // <>
+    //   <Counter></Counter>
+    //   <Greeting name={"world"}></Greeting>
+    // </>
     <>
-      <Counter></Counter>
-      <Greeting name={"world"}></Greeting>
+    <Controlled></Controlled>
+    <Uncontrolled></Uncontrolled>
+    <FetchDataComponent></FetchDataComponent>
     </>
   )
 }
