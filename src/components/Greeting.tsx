@@ -3,9 +3,10 @@ interface GreetingProps {
 }
 
 const Greeting = (props: GreetingProps) => {
+    const {name} = props;
     return (
         <>
-            <p>Привіт, {props.name}!</p>
+            <p>Привіт, {name}!</p>
         </>
     )
 }
